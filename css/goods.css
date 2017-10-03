@@ -167,7 +167,7 @@ color: white;
 .section_content .left{
 	width:700px ;
 	float: left;
-	overflow: hidden;
+	
 }
 .section_content .left div:first-child{
 		background: #fafafa;
@@ -444,7 +444,10 @@ sup{
 	color: #ed145b!important;
 }
 .detail{
-	width: 820px;
+	
+	height: 50px;
+	position: absolute;
+	
 	border: 1px solid #ccc;
 }
 .detail_tab{
@@ -831,6 +834,20 @@ sup{
 	width: 40px;
 	position: fixed;
 }
+.aside>p{
+	display: inline-block;
+	position: relative;
+	left:-152px ;
+	opacity: 0;
+	text-align: center;
+	line-height: 38px;
+	font-size: 13px;
+	top: 33px;
+	background: #444851;
+	width: 92px;
+	height: 38px;
+	color: rgba(255,255,255,0.7);
+}
 .aside i{
 	
 	
@@ -911,6 +928,7 @@ sup{
 	text-align: center;
 }
 .aside i:nth-of-type(1) s .s_bottom a{
+	font-style: normal;
 	position: relative;
 	color: rgba(0,0,0,0.4);
 	vertical-align: middle;
@@ -1016,4 +1034,34 @@ sup{
 	height: 16px;
 	background: url(../img/ibar_sprites.png) 0px -177px no-repeat;
 	
+}
+/*隐藏的导航*/
+#hiden_fixed{
+	display: none;
+	position: fixed;
+	margin: 0 auto;
+	width: 100%!important;
+	height: 35px;
+	background: black;
+	top: 0px;
+	z-index: 9999;
+}
+#hiden_fixed ul{
+	position: absolute;
+	left: -20px;
+	width: 100%;
+	line-height:35px ;
+	height: 35px;
+	list-style: none;
+	color: white;
+}
+#hiden_fixed ul li{
+	margin-left: 150px;
+}
+#hiden_fixed ul .price{
+	color: red;
+	font-size: 18px;
+}
+.togclass{
+	background: #ed145b !important;
 }
